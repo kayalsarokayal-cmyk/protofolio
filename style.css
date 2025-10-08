@@ -1,0 +1,159 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: #111;
+  color: #eee;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background: #222;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  color: #0ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-text h2 {
+  font-size: 2.5rem;
+  color: #0ff;
+}
+.hero-text p {
+  margin: 10px 0;
+}
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #0ff;
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #fff;
+}
+
+/* Section */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0ff;
+}
+
+/* Education */
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+.edu-card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-left: 6px solid #0ff;
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* skills*/
+.skills ul, .certifications ul, .achievements ul {
+  list-style: none;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+.skills li, .certifications li, .achievements li {
+  background: #1a1a1a;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Projects */
+.project-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.project-card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  width: 280px;
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Contact */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+form input, form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+form button {
+  padding: 10px;
+  background: #0ff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+form button:hover {
+  background: #fff;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  text-align: center;
+  padding: 20px;
+}
